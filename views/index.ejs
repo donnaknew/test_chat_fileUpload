@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title> File Upload Example </title>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css"/> -->
+  <link rel="stylesheet" href="/css/custom.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h3>Examples</h3>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="sidebar col-md-2">
+      <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><a href="/">Home</a></li>
+        <li role="presentation"><a href="https://github.com/inhochoi">Another Example</a></li>
+      </ul>
+    </div>
+    <div class="col-md-10">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h2>File Upload Example</h2>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">File Upload</h3>
+          </div>
+          <div class="panel-body">
+            <form id="fileUpload">
+              <div class="col-md-6 form-group">
+                <input type="file" name="file" id="inputFile">
+              </div>
+              <div class="col-md-offset-2 col-md-4 text-center">
+                <button type="submit" class="btn btn-default">Upload</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">File List</h3>
+          </div>
+          <table class="table" id="list">
+            <tr>
+              <th class="text-center">CreatedAt</th>
+              <th class="text-center">File Name</th>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 text-right">
+      <a href="https://inhochoi.github.io"><p>Created by InhoChoi</p></a>
+    </div>
+  </div>
+  <!-- <script src="/js/index.js"></script> -->
+</body>
+</html>
